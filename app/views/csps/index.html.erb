@@ -1,0 +1,27 @@
+<h1>ChinaStartupProducts</h1>
+
+<table bordrr="1">
+<thead>
+ <tr>
+ <th>ProductTitle</th>
+ <th>ProductContent</th>
+ <th>URL</th>
+ <th>Category</th>
+ <th>ArticleTitle</th>
+ <th>ArticleUrl</th>
+ </tr>
+ </thead>
+
+<tbody>
+ <% @products.each do |product| %>
+  <tr>
+   <td><%= product.title %></td>
+   <td><%= product.content %></td>
+   <td><%= product.url %></td>
+   <td><%= product.category %></td>
+   <td><%= product.article_title %></td>
+   <td><%= product.article_url %></td>
+  </tr>
+ <% end %>
+</tbody>
+</table>

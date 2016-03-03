@@ -1,0 +1,39 @@
+
+
+  <%= form_tag( '/csps/new', method: :post) do %>
+   <h3>Productをシェアする</h3>
+  <input placeholder= "Product　名前" type= "text" name= "title" >
+  <input placeholder= "Product　説明文" type= "text" name= "content" >
+  <input placeholder= "Product　URL" type= "text" name= "url">
+  <input placeholder= "関連記事　タイトル" type= "text" name= "article_title" >
+  <input placeholder= "関連記事　URL" type= "text" name= "article_url" >
+  <select id = "category" name="category" >
+   <option value="1">医療・介護</option>
+   <option value="2">ヘルスケア</option>
+   <option value="3">エンターテイメント</option>
+   <option value="4">写真・動画</option>
+   <option value="5">HR</option>
+   <option value="6">グルメ</option>
+   <option value="7">不動産</option>
+   <option value="8">ファッション</option>
+   <option value="9">企業向け</option>
+   <option value="10">EC</option>
+   <option value="11">旅行</option>
+   <option value="12">教育</option>
+   <option value="13">金融</option>
+   <option value="14">開発</option>
+   <option value="15">メディア</option>
+   <option value="16">SNS</option>
+   <option value="17">IOT</option>
+   <option value="18">広告</option>
+   <option value="19">デザイン</option>
+   <option value="20">交通</option>
+   <option value="21">VR・AR</option>
+   <option value="22">農村</option>
+   <option value="23">地域</option>
+   <option value="24">ツール</option>
+  </select>
+  <input type= "submit" value= "SENT">
+  <% end %>
+
+
